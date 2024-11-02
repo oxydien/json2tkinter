@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+select {
+  border: 2px solid #ccc;
+  background-color: transparent;
+  color: #dedee7;
+}
+
+select option {
+  background-color: #000;
+  color: #cfcfdc;
+}
+
+.app-preview-root {
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+
+  --title-height: 35px;
+}
+
+.app-preview-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(39, 39, 42);
+  color: #cfcfdc;
+  font-weight: 700;
+  height: var(--title-height);
+}
+
+.app-preview-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - var(--title-height));
+  background-color: #f0ebea;
+}
+
+.app-preview-content .app-widget-layout {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.app-preview-content button {
+  border: 1px solid gray;
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 2px;
+  padding-top: 0;
+  margin-top: 4px;
+  min-width: 80px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.app-preview-content select {
+  color: black;
+  min-width: 170px;
+  font-size: 0.9rem;
+  margin-block: 4px;
+}
+
+.app-preview-content label {
+  display: flex;
+  font-size: 0.9rem;
+  gap: 4px;
+}
+
+.app-preview-content input[type="text"] {
+  color: black;
+  padding-left: 2px;
+  background-color: white;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  width: 140px;
+}
+
+.app-preview-content p {
+  height: fit-content;
+  font-size: 0.8rem;
+  margin-block: 4px;
+}

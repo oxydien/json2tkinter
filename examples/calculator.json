@@ -1,0 +1,182 @@
+{
+	"title": "Calculator",
+	"geometry": "350x250",
+	"version": "0.1.0",
+	"content": [
+		{
+			"type": "Layout",
+			"kind": "vertical",
+			"content": [
+				{
+					"type": "Layout",
+					"kind": "horizontal",
+					"content": [
+						{
+							"type": "Input",
+							"id": "output"
+						},
+						{
+							"type": "Button",
+							"text": "Switch",
+							"execute": "switch"
+						}
+					]
+				},
+				{
+					"type": "Layout",
+					"kind": "horizontal",
+					"content": [
+						{
+							"type": "Button",
+							"text": "7",
+							"execute": {
+								"name": "nums",
+								"args": [
+									7
+								]
+							}
+						},
+						{
+							"type": "Button",
+							"text": "8",
+							"execute": {
+								"name": "nums",
+								"args": [
+									8
+								]
+							}
+						},
+						{
+							"type": "Button",
+							"text": "9",
+							"execute": {
+								"name": "nums",
+								"args": [
+									9
+								]
+							}
+						},
+						{
+							"type": "RadioButton",
+							"id": "operation",
+							"text": "Multiply"
+						}
+					]
+				},
+				{
+					"type": "Layout",
+					"kind": "horizontal",
+					"content": [
+						{
+							"type": "Button",
+							"text": "4",
+							"execute": {
+								"name": "nums",
+								"args": [
+									4
+								]
+							}
+						},
+						{
+							"type": "Button",
+							"text": "5",
+							"execute": {
+								"name": "nums",
+								"args": [
+									5
+								]
+							}
+						},
+						{
+							"type": "Button",
+							"text": "6",
+							"execute": {
+								"name": "nums",
+								"args": [
+									6
+								]
+							}
+						},
+						{
+							"type": "RadioButton",
+							"id": "operation",
+							"text": "Divide"
+						}
+					]
+				},
+				{
+					"type": "Layout",
+					"kind": "horizontal",
+					"content": [
+						{
+							"type": "Button",
+							"text": "1",
+							"execute": {
+								"name": "nums",
+								"args": [
+									1
+								]
+							}
+						},
+						{
+							"type": "Button",
+							"text": "2",
+							"execute": {
+								"name": "nums",
+								"args": [
+									2
+								]
+							}
+						},
+						{
+							"type": "Button",
+							"text": "3",
+							"execute": {
+								"name": "nums",
+								"args": [
+									3
+								]
+							}
+						},
+						{
+							"type": "RadioButton",
+							"id": "operation",
+							"text": "Add"
+						}
+					]
+				},
+				{
+					"type": "Layout",
+					"kind": "horizontal",
+					"content": [
+						{
+							"type": "Button",
+							"text": "0",
+							"execute": {
+								"name": "nums",
+								"args": [
+									0
+								]
+							}
+						},
+						{
+							"type": "Button",
+							"text": "C",
+							"execute": "clear"
+						},
+						{
+							"type": "Button",
+							"text": "=",
+							"execute": "calculate"
+						},
+						{
+							"type": "RadioButton",
+							"id": "operation",
+							"text": "Subtract"
+						}
+					]
+				}
+			]
+		}
+	]
+}

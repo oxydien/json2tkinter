@@ -1,0 +1,9 @@
+{
+	"title": "No interaction with tkinter",
+	"geometry": "300x250",
+	"version": "0.1.0",
+	"content": [
+		{ "type": "Label", "index": 1, "text": "Hello World" },
+		{ "type": "Button", "text": "Open popup", "execute": "hello_world" }
+	]
+}

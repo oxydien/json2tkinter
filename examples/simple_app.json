@@ -1,0 +1,66 @@
+{
+	"title": "My Tkinter App",
+	"geometry": "300x250",
+	"version": "0.1.0",
+	"content": [
+		{ "type": "Label", "index": 9, "text": "Hello World" },
+		{
+			"type": "Layout",
+			"kind": "horizontal",
+			"content": [
+				{ "type": "Label", "index": 11, "text": "Name:" },
+				{ "type": "Input", "id": "name_input", "index": 12 }
+			],
+			"index": 10
+		},
+		{
+			"type": "Layout",
+			"kind": "horizontal",
+			"content": [
+				{ "type": "Label", "index": 14, "text": "Age:" },
+				{ "type": "Input", "id": "age_input", "index": 15 }
+			],
+			"index": 13
+		},
+		{
+			"type": "Layout",
+			"kind": "vertical",
+			"content": [
+				{ "type": "Label", "index": 19, "text": "Gender" },
+				{
+					"type": "Layout",
+					"kind": "horizontal",
+					"content": [
+						{
+							"type": "RadioButton",
+							"text": "Man",
+							"id": "gender",
+							"index": 21
+						},
+						{
+							"type": "RadioButton",
+							"text": "Woman",
+							"id": "gender",
+							"index": 23
+						},
+						{
+							"type": "RadioButton",
+							"text": "Helicopter",
+							"id": "gender",
+							"index": 24
+						},
+						{
+							"type": "RadioButton",
+							"text": "Other",
+							"id": "gender",
+							"index": 25
+						}
+					],
+					"index": 20
+				}
+			],
+			"index": 17
+		},
+		{ "type": "Button", "text": "Submit", "execute": "add_to_db", "index": 16 }
+	]
+}
